@@ -4,7 +4,7 @@
  * @param {Underscore} _  
  */
 zen_coding.define('bootstrap', function(require, _) {
-	
+
 	/**
 	 * Returns file name part from path
 	 * @param {String} path Path to file
@@ -33,9 +33,9 @@ zen_coding.define('bootstrap', function(require, _) {
 		 * @param {Array} fileList List of absolute paths to files in extensions 
 		 * folder. Back-end app should not filter this list (e.g. by extension) 
 		 * but return it "as-is" so bootstrap can decide how to load contents 
-		 * of each file.
+		 * of each file. 
 		 * This method requires a <code>file</code> module of <code>IZenFile</code> 
-		 * interface to be implemented.
+		 * interface to be implemented. [Be sure to Patch the file -KateCoding.
 		 */
 		loadExtensions: function(fileList) {
 			var file = require('file');
